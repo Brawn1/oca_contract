@@ -39,6 +39,7 @@ class ContractAbstractContractLine(models.AbstractModel):
         string="Unit Price",
         compute="_compute_price_unit",
         inverse="_inverse_price_unit",
+        digits="Account",
     )
     price_subtotal = fields.Float(
         compute="_compute_price_subtotal",
